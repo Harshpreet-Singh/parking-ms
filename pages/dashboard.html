@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div><img src="../ico.png" alt="Parking Icon">  Parking Management - Dashboard</div>
+      <div class="nav-links">
+        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="book-slot.html"><i class="fas fa-ticket-alt"></i> Book</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <div class="hamburger" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="book-slot.html"><i class="fas fa-ticket-alt"></i> Book</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+
+    <div class="container">
+      <div class="dashboard-card">
+        <i class="fas fa-car fa-3x" style="color: #1e88e5"></i>
+        <h3>50</h3>
+        <p>Total Vehicles Parked</p>
+        <button class="view-slots-btn" data-type="occupied">View Slots</button>
+
+      </div>
+
+      <div class="dashboard-card">
+        <i class="fas fa-parking fa-3x" style="color: #43a047"></i>
+        <h3>10</h3>
+        <p>Available Slots</p>
+        <button class="view-slots-btn" data-type="available">View Slots</button>
+      </div>
+
+      <div class="dashboard-card">
+        <i class="fas fa-ticket-alt fa-3x" style="color: #f9a825"></i>
+        <h3>150</h3>
+        <p>Total Bookings</p>
+      </div>
+    </div>
+
+    
+
+    <script src="../assets/js/list.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

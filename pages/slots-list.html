@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+
+    <title>Slots List</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+    <link rel="stylesheet" href="../assets/css/slots-list.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div><img src="../ico.png" alt="Parking Icon">  Parking Management - Dashboard</div>
+      <div class="nav-links">
+        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+        <a href="book-slot.html"><i class="fas fa-ticket-alt"></i> Book</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <div class="hamburger" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+      <a href="book-slot.html"><i class="fas fa-ticket-alt"></i> Book</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+    <div class="container">
+      <h2 id="pageTitle"></h2>
+      <ul id="slotsList"></ul>
+      <!-- Vehicle Details Modal -->
+      <div id="vehicleModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="vehicleCloseBtn">&times;</span>
+          <h2>Vehicle Details</h2>
+          <div id="vehicleDetailsContent">
+            <!-- Vehicle info inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../assets/js/slots-list.js" defer></script>
+
+</html>

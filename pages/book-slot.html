@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Slot</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/book-slot.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div><img src="../ico.png" alt="Parking Icon">ParkingMS</div>
+      <div class="nav-links">
+        <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+      </div>
+      <div class="hamburger" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+    </div>
+
+    <div class="container">
+      <h2>Book a Parking Slot</h2>
+      <form>
+        <label><i class="fas fa-user"></i> Name</label>
+        <input type="text" placeholder="Enter your name" />
+
+        <label><i class="fas fa-car"></i> Vehicle Number</label>
+        <input type="text" placeholder="Vehicle number" />
+
+        <label><i class="fas fa-parking"></i> Select Slot</label>
+        <input type="text" placeholder="Slot number" />
+
+        <button type="submit" class="button">
+          <i class="fas fa-check-circle"></i> Confirm Booking
+        </button>
+      </form>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
